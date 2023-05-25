@@ -12,13 +12,16 @@
     "build": "tsc",
     "start-basic": "tsc -w",
     "start-local": "tsc -w",
-    "test": "TS_NODE_PROJECT=\"tsconfig.testing.json\" mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "TS_NODE_PROJECT=\"tsconfig.testing.json\" mocha -r ts-node/register test/**/*.spec.ts",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@burner-wallet/assets": "^1.1.10",
     "@burner-wallet/core": "^1.1.9",
     "@burner-wallet/exchange": "^1.1.4",
-    "@burner-wallet/types": "^1.0.6"
+    "@burner-wallet/types": "^1.0.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/mocha": "^7.0.2",
@@ -36,5 +39,6 @@
   "keywords": [
     "tokenbridge",
     "burner-wallet"
-  ]
+  ],
+  "snyk": true
 }
