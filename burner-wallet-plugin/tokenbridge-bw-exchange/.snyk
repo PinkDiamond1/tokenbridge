@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@burner-wallet/core > @dmihal/tabookey-gasless > @0x/contracts-utils > @0x/base-contract > ethereumjs-vm > async > lodash':
+        patched: '2023-05-25T15:19:08.306Z'
+    - '@burner-wallet/types > @burner-wallet/core > @dmihal/tabookey-gasless > @0x/contracts-utils > @0x/base-contract > ethereumjs-vm > async > lodash':
+        patched: '2023-05-25T15:19:08.306Z'
+    - '@burner-wallet/exchange > @burner-wallet/types > @burner-wallet/core > @dmihal/tabookey-gasless > @0x/contracts-utils > @0x/base-contract > @0x/assert > @0x/utils > lodash':
+        patched: '2023-05-25T15:19:08.306Z'
+    - '@burner-wallet/exchange > @burner-wallet/types > @burner-wallet/core > @dmihal/tabookey-gasless > @0x/contracts-utils > @0x/base-contract > ethereumjs-vm > async > lodash':
+        patched: '2023-05-25T15:19:08.306Z'
+    - '@burner-wallet/exchange > @burner-wallet/types > @burner-wallet/core > web3-provider-engine > eth-block-tracker > @babel/plugin-transform-runtime > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2023-05-25T15:19:08.306Z'
