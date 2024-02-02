@@ -30,9 +30,9 @@
     "react-scripts": "3.0.1",
     "styled-components": "^5.1.1",
     "typescript": "^3.5.2",
-    "web3": "1.2.11",
-    "web3-eth-contract": "1.2.11",
-    "web3-utils": "1.2.11"
+    "web3": "1.6.0",
+    "web3-eth-contract": "1.6.0",
+    "web3-utils": "1.6.0"
   },
   "scripts": {
     "start": "yarn createSnapshots && ./load-env.sh react-app-rewired start",
